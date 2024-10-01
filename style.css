@@ -26,8 +26,11 @@
 }
 
 .formulario h1{
+    display: flex;
     font-size: 3em;
     color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 .formulario .buttons button{
@@ -43,4 +46,20 @@
 
 .formulario .buttons button:hover{
     background: rgb(192, 146, 153);
+}
+
+@media (max-width: 745px){
+    .formulario img{
+        width: 30%;
+    }
+
+    .formulario h1{
+        font-size: 2em;
+    }
+
+    .formulario .buttons button{
+        width: 100px;
+        height: 60px;
+        font-size: 1.5em;
+    }
 }
