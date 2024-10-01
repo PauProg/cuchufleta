@@ -46,6 +46,54 @@
     background: rgb(192, 146, 153);
 }
 
+.questions{
+    display: none;
+}
+
+.questions form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.questions form h2{
+    font-size: 3em;
+    color: white;
+}
+
+.questions form label{
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.questions form label input,
+.questions form label textarea{
+    font-size: 1.1em;
+    border: none;
+    background: rgba(255, 255, 255, .5);
+}
+
+.questions form input[type="submit"]{
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.3em;
+    background: pink;
+    transition: all ease .55s;
+    margin: 5px 10px;
+}
+
+.questions form input[type="submit"]:hover{
+    background: rgb(192, 146, 153);
+}
+
 @media (max-width: 745px){
     .formulario img{
         width: 30%;

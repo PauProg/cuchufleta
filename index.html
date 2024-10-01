@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quieres?</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Heart_corazón.svg.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,26 +14,42 @@
 <body>
     
     <div class="container">
-        <div class="formulario">
+        <div class="formulario" id="form">
             <img src="Heart_corazón.svg.png" alt="cor">
             <h1>Quieres ser mi cuchufleta?</h1>
             <div class="buttons">
-                <button onclick="si()">Si</button>
-                <button onclick="no()" class="no">No</button>
+                <button id="si">Si</button>
+                <button id="no">No</button>
             </div>
+        </div>
+        <div class="questions" id="quest">
+            <form>
+                <h2>Formulario</h2>
+                <label>
+                    Introduce tu nombre:
+                    <input type="text" placeholder="Name..." required>
+                </label>
+                <label>
+                    Introduce tu edad:
+                    <input type="number" placeholder="Age..." min="12" max="30" required>
+                </label>
+                <label>
+                    Introduce tu correo:
+                    <input type="email" placeholder="Email..." required>
+                </label>
+                <label>
+                    Introduce tu número de teléfono: (Opcional)
+                    <input type="tel" placeholder="Phone...">
+                </label>
+                <label>
+                    Introduce el porque de tu respuesta
+                    <textarea placeholder="Why?" rows="5" required></textarea>
+                </label>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
     </div>
 
-
-    <script>
-        function si(){
-            alert('Te amo mucho mi cuchufleta, eres lo mejor que me ha pasado en la vida, gracias por ser mi novia, te amo');
-        }
-
-        function no(){
-            alert('No te preocupes, no pasa nada, te amo mucho mi cuchufleta');
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
